@@ -1,0 +1,29 @@
+//
+//  Domn.pch
+//  下载Demo
+//
+//  Created by Bodyconn on 15/5/25.
+//  Copyright (c) 2015年 LPC. All rights reserved.
+//
+
+#ifndef __Demo_Domn_pch
+#define __Demo_Domn_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+#import "FileHelper.h"
+#import "FilesDownManage.h"
+#import "UIColor+FromHex.h"
+
+
+#define  fileManage             ([FilesDownManage sharedFilesDownManage])
+
+#define COLOR_(HexStr)          ([UIColor colorwithHexString:HexStr alpha:1])
+
+
+#define Screen_Height ([UIScreen mainScreen].bounds.size.height)
+#define Screen_Width ([UIScreen mainScreen].bounds.size.width)
+
+#endif
